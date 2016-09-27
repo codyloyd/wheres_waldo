@@ -19,3 +19,19 @@
 	display: block;
 	position: relative;
 }
+
+.win-prompt {
+	width: 400px;
+	position: fixed;
+	text-align: center;
+	padding-bottom: 20px;
+	top:60px;
+	left: 50%;
+	margin-left: -250px;
+	background: white;
+	border: 1px solid #aaaaaa;
+	border-radius: 4px;
+	-webkit-box-shadow: 10px 10px 34px 4px rgba(0,0,0,0.43);
+	-moz-box-shadow: 10px 10px 34px 4px rgba(0,0,0,0.43);
+	box-shadow: 10px 10px 34px 4px rgba(0,0,0,0.43);
+}
