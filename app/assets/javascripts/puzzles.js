@@ -24,6 +24,7 @@ $(document).ready(function(){
 				$("body").append(div)
 				$(".win-prompt").append("<h1>you found him!</h1> <h2> and it only took you " + (winTime/1000).toFixed(1) + " seconds!</h2>")
 				$(".win-prompt").append("<button>Next Puzzle?</button>")
+				$(".puzzle-div").unbind("click")
 
 			}
 		})
