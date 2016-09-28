@@ -1,11 +1,15 @@
 // Place all the styles related to the puzzles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import 'https://fonts.googleapis.com/css?family=Copse';
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900';
 
 * {
-	font-family: "Copse";
-	font-weight: 400;
+	font-family: "Playfair Display";
+	// font-weight: 400;
+}
+
+h1 {
+	font-weight: 900;
 }
 
 .target {
