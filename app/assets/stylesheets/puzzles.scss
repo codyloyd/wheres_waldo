@@ -12,13 +12,11 @@ h1 {
 	font-weight: 900;
 }
 body {
-	background: rgb(215, 238, 252);
-	background: url('ricebackground.jpg');
-	background: url('waldobackgroundblurred.jpg');
+	background: url('./waldobackgroundblurred.jpg');
 }
 
 body.index-body {
-	background: url("waldobackground.jpg") no-repeat   fixed;
+	background: url("./waldobackground.jpg") no-repeat   fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
