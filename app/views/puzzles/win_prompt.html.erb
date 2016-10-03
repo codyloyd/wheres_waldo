@@ -1,0 +1,11 @@
+<div class="win-prompt">
+  <h1>You found him!</h1>
+  <h2>it only took you <%= @time/100.0 %> seconds!</h2>
+  <%= form_for @score do |f| %>
+    <%= f.text_field :name, placeholder: "name" %>
+    <%= f.submit "submit"%>
+    <%= f.hidden_field :puzzle_id, value: @puzzle.id %>
+    <%= f.hidden_field :time, value: @time %>
+  <% end %>
+  <p>Enter your name to place your name on the leaderboard.</p>
+</div>
