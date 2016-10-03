@@ -11,6 +11,43 @@
 h1 {
 	font-weight: 900;
 }
+body {
+	background: rgb(215, 238, 252);
+	background: url('ricebackground.jpg');
+	background: url('waldobackgroundblurred.jpg');
+}
+
+body.index-body {
+	background: url("waldobackground.jpg") no-repeat   fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: auto;
+}
+
+.index {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.5em;
+	background: rgba(255, 255, 255, .8);
+	border: 2px #333 solid;
+	border-radius: 10px;
+	-webkit-box-shadow: 10px 10px 34px 4px rgba(0,0,0,0.43);
+	-moz-box-shadow: 10px 10px 34px 4px rgba(0,0,0,0.43);
+	box-shadow: 10px 10px 34px 4px rgba(0,0,0,0.43);
+	ul {
+		list-style-type: none;
+		margin-left: -40px;
+	}
+	a {
+		text-decoration: none;
+		color: black;
+		&:hover{
+			color: red;
+		}
+	}
+}
 
 .target {
 	width: 5px;
@@ -24,15 +61,20 @@ h1 {
 }
 
 #puzzle-image {
-	// display: block;
-	float: left;
+	position: relative;
 	max-width: 100%;
 }
 
 .puzzle-div {
 	border: 2px solid black;
-	display: block;
 	position: relative;
+	margin: 0 auto;
+}
+
+.puzzle-container {
+	min-width: 1000px;
+	margin:0 auto;
+	text-align: center;
 }
 
 .win-prompt {
@@ -42,7 +84,7 @@ h1 {
 	padding-bottom: 20px;
 	top:60px;
 	left: 50%;
-	margin-left: -250px;
+	margin-left: -200px;
 	background: white;
 	border: 1px solid #aaaaaa;
 	border-radius: 4px;
@@ -50,4 +92,16 @@ h1 {
 	-moz-box-shadow: 10px 10px 34px 4px rgba(0,0,0,0.43);
 	box-shadow: 10px 10px 34px 4px rgba(0,0,0,0.43);
 	z-index: 200;
+}
+
+.high-scores {
+	width: 600px;
+	font-size: 1.2em;
+	text-align: center;
+	margin:0 auto;
+	ol {
+		font-size: 1.5em;
+		list-style-position: inside;
+		margin-left: -20px;
+	}
 }

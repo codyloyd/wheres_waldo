@@ -1,12 +1,14 @@
-<h1>click on waldo....</h1>
-<div class="puzzle-div">
-<%= image_tag @puzzle.image_url, id: "puzzle-image"%>
+<div class="puzzle-container">
+  <h1>click on waldo....</h1>
+  <div class="puzzle-div">
+  <%= image_tag @puzzle.image_url, id: "puzzle-image"%>
+  </div>
+
+  <%= link_to "Back to Index", puzzles_url %>
+
+  <% if @next_puzzle %>
+    <%= link_to "next puzzle", puzzle_url(@next_puzzle) %>
+  <% end %>
 </div>
-
-<%= link_to "Back to Index", puzzles_url %>
-
-<% if @next_puzzle %>
-  <%= link_to "next puzzle", puzzle_url(@next_puzzle) %>
-<% end %>
 
 <%# render :partial => "win_prompt" %>

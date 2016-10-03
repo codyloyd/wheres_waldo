@@ -1,7 +1,11 @@
 class ScoresController < ApplicationController
   def create
     @puzzle = Puzzle.find(params[:score][:puzzle_id])
-    @puzzle.scores.create(score: params[:score][:time], name: params[:score][:name])
+    score = @puzzle.scores.new(score: params[:score][:time], name: params[:score][:name])
+    if score.name == ""
+      score.name = "anonymous"
+    end
+    score.save
     redirect_to puzzles_url
   end
 

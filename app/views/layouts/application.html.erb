@@ -9,7 +9,11 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
+  <% if action_name === "index" %>
+    <body class="index-body">
+  <% else %>
+    <body>
+  <% end %>
     <%= yield %>
   </body>
 </html>
