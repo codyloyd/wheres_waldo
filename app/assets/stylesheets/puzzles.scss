@@ -12,11 +12,11 @@ h1 {
 	font-weight: 900;
 }
 body {
-	background: url('./images/waldobackgroundblurred.jpg');
+	background: image-url('waldobackgroundblurred.jpg');
 }
 
 body.index-body {
-	background: url("./images/waldobackground.jpg") no-repeat   fixed;
+	background: image-url("waldobackground.jpg") no-repeat   fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
