@@ -11,7 +11,7 @@ class PuzzlesController < ApplicationController
   end
 
   def win_prompt
-    @time = params[:time].to_i / 10
+    @time = params[:time].to_i
     @puzzle = Puzzle.find(params[:id])
     @score = @puzzle.scores.new(score: @time)
     render :layout => false
